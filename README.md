@@ -1,54 +1,56 @@
-Análisis HLA-COVID
-Análisis estadístico de la relación entre alelos HLA y la severidad de COVID-19.
+Análisis de Alelos HLA en COVID-19
+Descripción
+Este proyecto analiza la relación entre alelos HLA y la severidad de COVID-19, incluyendo análisis de hospitalización y casos asintomáticos.
 Estructura del Proyecto
 Copyhla-covid-analisis/
-├── scripts/
-│   ├── preprocessing/      # Preprocesamiento de datos
-│   ├── imputation/        # Imputación HLA
-│   ├── analysis/          # Análisis estadístico
-│   ├── visualization/     # Visualización de resultados
-│   └── utils/             # Utilidades y configuración
-├── data/
-│   ├── raw/              # Datos originales
-│   └── processed/        # Datos procesados
-├── results/
-│   ├── plots/            # Gráficos generados
-│   └── tables/           # Tablas de resultados
-└── docs/                 # Documentación adicional
+├── scripts/              # Scripts de análisis
+│   ├── preprocessing/    # Preprocesamiento de datos
+│   ├── imputation/      # Imputación HLA
+│   ├── analysis/        # Análisis estadístico
+│   ├── visualization/   # Visualización
+│   └── utils/          # Utilidades
+├── data/                # Datos
+│   ├── raw/            # Datos sin procesar
+│   └── processed/      # Datos procesados
+├── results/            # Resultados
+├── plots/              # Visualizaciones
+└── docs/              # Documentación
 Requisitos
 
 R versión 4.0.0 o superior
-Paquetes R necesarios:
+Paquetes R requeridos:
 
 HIBAG
 data.table
 ggplot2
-corrplot
-pROC
-[etc...]
+[otros paquetes...]
 
 
 
 Instalación
 
-Clonar el repositorio
-Ejecutar source("scripts/utils/config.R") para instalar dependencias
-Ejecutar source("scripts/main.R") para realizar el análisis completo
+Clonar el repositorio:
 
+bashCopygit clone https://github.com/davidgarvalfer/hla-covid-analisis.git
+cd hla-covid-analisis
+
+Instalar dependencias:
+
+RCopysource("scripts/utils/config.R")
 Uso
-rCopy# Ejecutar análisis completo
-source("scripts/main.R")
+RCopysource("scripts/main.R")
+Configuración
+Modificar el archivo config.yml según sea necesario:
 
-# O ejecutar pasos individuales
-source("scripts/preprocessing/data_preparation.R")
-source("scripts/imputation/imputation_functions.R")
-source("scripts/analysis/statistical_analysis.R")
-source("scripts/visualization/plotting_functions.R")
+Rutas de datos
+Parámetros de análisis
+Configuración de resultados
+
 Resultados
 Los resultados se guardan en:
 
-Gráficos: results/plots/
-Tablas: results/tables/
+results/: Archivos de resultados estadísticos
+plots/: Visualizaciones generadas
 
-Contacto
-David García
+Autor
+David García Valentín-Fernández
