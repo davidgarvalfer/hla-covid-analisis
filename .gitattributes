@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# R files
+*.R linguist-language=R
+*.Rmd linguist-language=R
+*.RData binary
+*.rda binary
+*.rds binary

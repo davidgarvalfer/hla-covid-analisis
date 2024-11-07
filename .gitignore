@@ -1,0 +1,23 @@
+# R files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Data
+/data/raw/*
+/data/processed/*
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+
+# Results
+/results/*
+!/results/plots/.gitkeep
+!/results/tables/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
