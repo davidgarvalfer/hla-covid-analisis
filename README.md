@@ -2,7 +2,7 @@ Análisis de Alelos HLA en COVID-19
 Descripción
 Este proyecto analiza la relación entre alelos HLA y la severidad de COVID-19, incluyendo análisis de hospitalización y casos asintomáticos.
 Estructura del Proyecto
-Copyhla-covid-analisis/
+hla-covid-analisis/
 ├── scripts/              # Scripts de análisis
 │   ├── preprocessing/    # Preprocesamiento de datos
 │   ├── imputation/      # Imputación HLA
@@ -31,14 +31,14 @@ Instalación
 
 Clonar el repositorio:
 
-bashCopygit clone https://github.com/davidgarvalfer/hla-covid-analisis.git
+git clone https://github.com/davidgarvalfer/hla-covid-analisis.git
 cd hla-covid-analisis
 
 Instalar dependencias:
 
-RCopysource("scripts/utils/config.R")
+source("scripts/utils/config.R")
 Uso
-RCopysource("scripts/main.R")
+source("scripts/main.R")
 Configuración
 Modificar el archivo config.yml según sea necesario:
 
